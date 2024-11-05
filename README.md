@@ -32,11 +32,15 @@ start["開始"];
 end1["終了"]
 if{"条件に合うか"}
 win["勝ち"]
+win+1["何勝目"]
 loose["負け"]
+loose+1["何負目"]
 
 start --> if
 if -->|yes| win
-win --> end1
+win --> win+1
+win+1 -->end1
 if -->|no| loose
-loose --> end1
+loose --> loose+1
+loose+1 --> end1
 ```
