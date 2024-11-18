@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>クイズ2</title>
+</head>
+<body>
+    <h2>息子と娘が誘拐された。一人しか取り戻せない。どちらを取り戻す？</h2>
+    <form action="/quiz2" method="get">
+        <input type="checkbox" name="test1" id="1">
+        <label for="test1">息子</label><br>
+        <input type="checkbox" name="test2" id="2">
+        <label for="test2">娘</label><br>
+        <input type="hidden" name="count" value="<%= count %>">
+        <input type="submit" value="送信">
+    </form>
+    
+    <% if (result) { %>
+        <h2>結果</h2>
+        <p><%= result %></p>
+    <% } %>
+    <form action="/quiz3" method="get">
+        <input type="submit" value="次の問題へ">
+    </form>
+</body>
+</html>
+

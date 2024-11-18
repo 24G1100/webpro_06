@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>クイズ3</title>
+</head>
+<body>
+    <h2>僕は今どれくらいお腹が空いているでしょうか？</h2>
+    <p>＊右に行くほどお腹が空いていることになります</p>
+    <form action="/quiz3" method="get">
+        <input type="range" name="range" id="range"><br>
+        <input type="submit" value="送信">
+    </form>
+    <% if (result) { %>
+        <h2>結果</h2>
+        <p><%= result %></p>
+    <% } %>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>予選</title>
+</head>
+<body>
+    <p>予選突破してください</p>
+    <form action="/yosen" method="get">
+        <button type="submit">生きてるだけで偉いでーす</button>
+    </form>
+    <% if (result) { %>
+        <p><%= result %></p>
+    <% } %>
+</body>
+</html>
