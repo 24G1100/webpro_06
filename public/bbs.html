@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>掲示板</title>
+    <script src="./bbs.js" defer></script> <!-- bbs.jsを読み込み -->
+    <link rel="stylesheet" href="./bbs.css"> <!-- CSSを読み込み -->
+</head>
+<body>
+    <h1>掲示板</h1>
+
+    <!-- 投稿フォーム -->
+    <div>
+        <label for="name">名前：</label>
+        <input type="text" id="name">
+        <label for="message">メッセージ：</label>
+        <input type="text" id="message">
+        <button type="button" id="post">送信</button>
+    </div>
+
+    <!-- 投稿チェックボタン -->
+    <div id="check">
+        <button type="button" id="checkBtn">投稿チェック</button>
+    </div>
+
+    <!-- 投稿が表示されるエリア -->
+    <div id="bbs"></div>
+
+</body>
+</html>

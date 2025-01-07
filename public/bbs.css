@@ -1,0 +1,18 @@
+.cover {
+    border-bottom: 1px solid #c0c0c0;
+    margin: 3px;
+}
+
+.cover.my-post {
+    background-color: #d4f0ff; /* 青みがかった背景色 */
+    border-left: 4px solid #00aaff; /* 左側の目立つボーダー */
+}
+
+.name {
+    font-weight: bold;
+    width: 8em;
+}
+
+.mes {
+    margin-left: 30px;
+}

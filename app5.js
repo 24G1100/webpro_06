@@ -37,7 +37,7 @@ app.get("/janken", (req, res) => {
   let total = req.query.total ? parseInt(req.query.total, 10) : 0;
   console.log({ hand, win, total });
 
-  const num = Math.floor(Math.random() * 3 + 1); // 1: グー, 2: チョキ, 3: パー
+  const num = Math.floor(Math.random() * 3 + 1); 
   let cpu = '';
   if (num == 1) cpu = 'グー';
   else if (num == 2) cpu = 'チョキ';
